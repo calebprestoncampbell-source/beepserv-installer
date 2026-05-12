@@ -18,16 +18,10 @@ jobs:
         run: chmod +x build.sh
 
       - name: Run build
-        run: ./build.sh || true
+        run: ./build.sh
 
-      - name: Show files
-        run: |
-          pwd
-          find . -type f
-
-      - name: Upload all outputs
+      - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: outputs
-          path: |
-            **
+          name: Installer-ipa
+          path: Installer.ipa
