@@ -22,7 +22,7 @@ jobs:
         run: |
           xcodebuild \
           -project beepserv-installer.xcodeproj \
-          -scheme beepserv-installer \
+          -scheme BeepServ \
           -configuration Release \
           -sdk iphoneos \
           CODE_SIGNING_ALLOWED=NO \
