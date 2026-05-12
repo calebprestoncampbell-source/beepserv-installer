@@ -17,11 +17,14 @@ jobs:
       - name: Make build script executable
         run: chmod +x build.sh
 
-      - name: Run build
+      - name: Run build script
         run: ./build.sh
+
+      - name: Show generated files
+        run: find . -name "*.ipa"
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: Installer-ipa
-          path: Installer.ipa
+          name: ipa
+          path: ./*.ipa
