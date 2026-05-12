@@ -8,24 +8,29 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Select Xcode
         run: sudo xcode-select -s /Applications/Xcode.app
 
-      - name: Make build script executable
-        run: chmod +x build.sh
+      - name: Build archive
+        run: |
+          xcodebuild \
+          -project beepserv-installer.xcodeproj \
+          -scheme beepserv-installer \
+          -configuration Release \
+          -sdk iphoneos \
+          CODE_SIGNING_ALLOWED=NO \
+          build
 
-      - name: Run build
-        run: ./build.sh || true
-
-      - name: Find IPA
-        run: find . -name "*.ipa"
+      - name: Package IPA
+        run: |
+          mkdir Payload
+          cp -r build/Release-iphoneos/beepserv-installer.app Payload/
+          zip -r beepserv-installer.ipa Payload
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
           name: ipa
-          path: |
-            **/*.ipa
+          path: beepserv-installer.ipa
