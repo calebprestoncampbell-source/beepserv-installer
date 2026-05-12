@@ -31,9 +31,9 @@ jobs:
       - name: Package IPA
         run: |
           mkdir Payload
-          cp -r build/Release-iphoneos/beepserv-installer.app Payload/
-          zip -r beepserv-installer.ipa Payload
-
+          find build -name "*.app"
+          cp -r $(find build -name "*.app" | head -n 1) Payload/
+          zip -r beeperv-installer.ipa Payload
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
