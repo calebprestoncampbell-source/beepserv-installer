@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31083CCE2BBAE668006286CE /* vnode.m in Sources */ = {isa = PBXBuildFile; fileRef = 31083CCD2BBAE668006286CE /* vnode.m */; };
-		315ADD532BD2D9650075B594 /* ValidationRelay.tipa in Resources */ = {isa = PBXBuildFile; fileRef = 315ADD522BD2D9650075B594 /* ValidationRelay.tipa */; };
+		315ADD532BD2D9650075B594 /*  in Resources */ = {isa = PBXBuildFile; fileRef = 315ADD522BD2D9650075B594 /*  */; };
 		3166612D2BAD8465009D22D8 /* BeepServInstallerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166612C2BAD8465009D22D8 /* BeepServInstallerApp.swift */; };
 		316661312BAD8466009D22D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316661302BAD8466009D22D8 /* Assets.xcassets */; };
 		316661342BAD8466009D22D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316661332BAD8466009D22D8 /* Preview Assets.xcassets */; };
@@ -81,7 +81,7 @@
 /* Begin PBXFileReference section */
 		31083CCD2BBAE668006286CE /* vnode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vnode.m; sourceTree = "<group>"; };
 		31083CCF2BBAE670006286CE /* vnode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vnode.h; sourceTree = "<group>"; };
-		315ADD522BD2D9650075B594 /* ValidationRelay.tipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = ValidationRelay.tipa; sourceTree = "<group>"; };
+		315ADD522BD2D9650075B594 /*  */ = {isa = PBXFileReference; lastKnownFileType = file; path = ; sourceTree = "<group>"; };
 		316661292BAD8465009D22D8 /* beepserv-installer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "beepserv-installer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3166612C2BAD8465009D22D8 /* BeepServInstallerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeepServInstallerApp.swift; sourceTree = "<group>"; };
 		316661302BAD8466009D22D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -652,7 +652,7 @@
 		31F85A052BAE143800A74022 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				315ADD522BD2D9650075B594 /* ValidationRelay.tipa */,
+				315ADD522BD2D9650075B594 /*  */,
 				319C8F8B2BB8AFBE00E19B34 /* TrollStore.tar */,
 				319C4BDF2BC07FF00060A2C7 /* ValidationRelayTF.tipa */,
 			);
@@ -720,7 +720,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				319C4BE02BC07FFF0060A2C7 /* ValidationRelayTF.tipa in Resources */,
-				315ADD532BD2D9650075B594 /* ValidationRelay.tipa in Resources */,
+				315ADD532BD2D9650075B594 /*  in Resources */,
 				316661342BAD8466009D22D8 /* Preview Assets.xcassets in Resources */,
 				316661312BAD8466009D22D8 /* Assets.xcassets in Resources */,
 				319C8F8C2BB8AFBE00E19B34 /* TrollStore.tar in Resources */,
